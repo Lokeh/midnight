@@ -1,0 +1,6 @@
+<ul class="nav" role="navigation">
+	<li><a href="{{@blog.url}}">Home</a></li>
+{{#foreach navigation}}
+	<li><a href="{{ url absolute="true" }}">{{label}}</a></li>
+{{/foreach}}
+</ul>

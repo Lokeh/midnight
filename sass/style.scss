@@ -92,7 +92,7 @@ body {
 		border-radius: 55px;
 		background: rgba(200,200,200,1);
 		margin: 0 auto;
-		background-image: url('profile.jpg');
+		background-image: url('../img/profile.jpg');
 		background-size: 150px; 
 		background-position-x: -8px;
 	}
@@ -158,6 +158,11 @@ body {
 	.content {
 		padding: 10px;
 
+		h1 {
+			border-bottom: 1px solid #ddd;
+			margin: 10px auto;
+		}
+
 		.post {
 			h2 {
 				.date {
@@ -169,7 +174,7 @@ body {
 				padding-bottom: 3px;
 				margin-top: 20px;
 				margin-bottom: 10px;
-				border-bottom: 1px solid #ddd;
+				border-bottom: 1px dashed #ddd;
 			}
 
 			p, pre {

@@ -23,7 +23,7 @@ h1, h2, h3 {
   line-height: 1.1; }
 
 a, a:visited, a:active {
-  color: white;
+  color: #fff;
   text-decoration: none; }
 
 a:hover {
@@ -46,7 +46,7 @@ p {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
-  color: #333333; }
+  color: #333; }
 
 .container {
   max-width: 1150px;
@@ -54,7 +54,7 @@ body {
 
 .sidebar {
   background: #5c97bf;
-  color: white; }
+  color: #fff; }
   .sidebar h1 {
     font-family: 'Lobster', cursive;
     font-size: 2.5em;
@@ -66,7 +66,7 @@ body {
   .sidebar h3 {
     font-size: 1.3em; }
   .sidebar h2, .sidebar h3 {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fff;
     width: 80%;
     margin: 10px auto;
     padding: 10px; }
@@ -78,7 +78,7 @@ body {
     border-radius: 55px;
     background: #c8c8c8;
     margin: 0 auto;
-    background-image: url("profile.jpg");
+    background-image: url("../img/profile.jpg");
     background-size: 150px;
     background-position-x: -8px; }
   .sidebar ul.activity {
@@ -99,7 +99,7 @@ body {
 
 .main {
   padding-top: 15px;
-  background: white; }
+  background: #fff; }
   .main h2 a, .main h2 a:visited, .main h2 a:active {
     color: #333; }
   .main a {
@@ -116,13 +116,16 @@ body {
       color: #ff9872; }
   .main .content {
     padding: 10px; }
+    .main .content h1 {
+      border-bottom: 1px solid #ddd;
+      margin: 10px auto; }
     .main .content .post {
       margin-bottom: 50px; }
       .main .content .post h2 {
         padding-bottom: 3px;
         margin-top: 20px;
         margin-bottom: 10px;
-        border-bottom: 1px solid #ddd; }
+        border-bottom: 1px dashed #ddd; }
         .main .content .post h2 .date {
           font-size: 14px;
           display: block;
@@ -232,3 +235,5 @@ body {
     margin-bottom: 10px;
     margin-left: 5px;
     margin-right: 5px; }
+
+/*# sourceMappingURL=style.css.map */
