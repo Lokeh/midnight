@@ -78,9 +78,10 @@ body {
     border-radius: 55px;
     background: #c8c8c8;
     margin: 0 auto;
-    background-image: url("../img/profile.jpg");
+    background-image: url(/content/images/2015/05/thumb.jpg);
     background-size: 150px;
-    background-position-x: -8px; }
+    background-position-x: -30px;
+    background-position-y: -9px; }
   .sidebar ul.activity {
     list-style: square;
     margin-left: 30px;
@@ -121,19 +122,24 @@ body {
       margin: 10px auto; }
     .main .content .post {
       margin-bottom: 50px; }
-      .main .content .post h2 {
+      .main .content .post header > h2, .main .content .post h1 {
         padding-bottom: 3px;
         margin-top: 20px;
         margin-bottom: 10px;
-        border-bottom: 1px dashed #ddd; }
-        .main .content .post h2 .date {
+        border-bottom: 1px solid #ddd;
+        margin-left: 10px; }
+        .main .content .post header > h2 .date, .main .content .post h1 .date {
           font-size: 14px;
           display: block;
           font-weight: bold;
           margin-top: 5px; }
+      .main .content .post h2, .main .content .post h3, .main .content .post h4 {
+        margin-left: 20px; }
       .main .content .post p, .main .content .post pre {
         padding-left: 20px;
         padding-right: 20px; }
+    .main .content .loop.post h2 {
+      border: 0; }
     .main .content .page h2 {
       padding-bottom: 3px;
       margin-top: 20px;
