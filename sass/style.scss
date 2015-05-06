@@ -2,7 +2,10 @@
 
 @import 'jeet/index';
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
-@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+// @import url(http://fonts.googleapis.com/css?family=Lobster);
 
 
 
@@ -20,6 +23,10 @@ $link-color: #3498DB;
 
 body {
 	background: $secondary-color;
+}
+
+pre {
+	background: darken($secondary-color, 8%);
 }
 
 h1, h2, h3 {
@@ -53,7 +60,7 @@ p {
 }
 
 body {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 	color: $body-font-color;
 }
@@ -65,7 +72,7 @@ body {
 
 .sidebar {
 	h1 {
-		font-family: 'Lobster', cursive;
+		// font-family: 'Roboto', serif;
 		font-size: 2.5em;
 		margin-bottom: 10px;
 		padding-top: 20px;
@@ -117,6 +124,10 @@ body {
 		margin-bottom: 5px;
 		list-style: none;
 		padding-left: 0;
+	}
+
+	ul.socials {
+		margin-bottom: 15px;
 	}
 
 	ul.nav li, ul.socials li {
@@ -281,4 +292,15 @@ body {
 	}
 	padding: 10px;
 	background: $grey;
+}
+
+.project > .image {
+	max-height: 198px;
+	overflow: hidden;
+	width: 63%;
+	margin: 0 auto;
+}
+
+.project > .image > img {
+	width: 100%;
 }
