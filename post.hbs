@@ -2,7 +2,7 @@
 
 {{#post}}
 <article class="{{post_class}}">
-	<header><h2>{{ title }} <span class="date">{{ date format="DD MMMM YYYY" }}</span></h2></header>
+	<header><h1>{{ title }} <span class="date">by {{author.name}} / {{ date format="DD MMMM YYYY" }}</span></h1></header>
 	<p>{{ content }}</p>
 </article>
 {{/post}}
