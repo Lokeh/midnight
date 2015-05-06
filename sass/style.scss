@@ -92,9 +92,10 @@ body {
 		border-radius: 55px;
 		background: rgba(200,200,200,1);
 		margin: 0 auto;
-		background-image: url('../img/profile.jpg');
+		background-image: url(/content/images/2015/05/thumb.jpg);
 		background-size: 150px; 
-		background-position-x: -8px;
+		background-position-x: -30px;
+		background-position-y: -9px;
 	}
 
 	background: $primary-color;
@@ -164,7 +165,7 @@ body {
 		}
 
 		.post {
-			h2 {
+			header > h2,h1 {
 				.date {
 					font-size: 14px;
 					display: block;
@@ -174,7 +175,12 @@ body {
 				padding-bottom: 3px;
 				margin-top: 20px;
 				margin-bottom: 10px;
-				border-bottom: 1px dashed #ddd;
+				border-bottom: 1px solid #ddd;
+				margin-left: 10px;
+			}
+
+			h2, h3, h4 {
+				margin-left: 20px;
 			}
 
 			p, pre {
@@ -183,6 +189,12 @@ body {
 			}
 
 			margin-bottom: 50px;
+		}
+
+		.loop.post {
+			h2 {
+				border: 0;
+			}
 		}
 
 		.page {
