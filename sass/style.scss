@@ -6,15 +6,20 @@
 
 
 
-$primary-color: rgba(92, 151, 191, 1); /* Fountain Blue */
-$secondary-color: #fff;
-$highlight-color: #ff9872;
+$primary-color: #2C3E50; /* Fountain Blue */
+$secondary-color: #ECF0F1;
+$highlight-color: #E74C3C;
 $grey: #eaeaea;
 $jeet-gutter: 1.5;
 $body-font-color: #333;
+$link-color: #3498DB;
 
 * {
 	box-sizing: border-box;
+}
+
+body {
+	background: $secondary-color;
 }
 
 h1, h2, h3 {
@@ -76,7 +81,7 @@ body {
 	}
 
 	h2, h3 {
-		border-bottom: 1px solid $secondary-color;
+		border-bottom: 1px solid $highlight-color;
 		width: 80%;
 		margin: 10px auto;
 		padding: 10px;
@@ -132,10 +137,13 @@ body {
 		a, a:visited, a:active {
 			color: #333;
 		}
+		a:hover {
+			color: $link-color;
+		}
 	}
 
 	a {
-		color: lighten($body-font-color, 20%);
+		color: $link-color;
 	}
 
 	a:hover {
@@ -160,7 +168,7 @@ body {
 		padding: 10px;
 
 		h1 {
-			border-bottom: 1px solid #ddd;
+			border-bottom: 1px solid $highlight-color;
 			margin: 10px auto;
 		}
 
@@ -175,7 +183,7 @@ body {
 				padding-bottom: 3px;
 				margin-top: 20px;
 				margin-bottom: 10px;
-				border-bottom: 1px solid #ddd;
+				border-bottom: 1px solid $highlight-color;
 				margin-left: 10px;
 			}
 
