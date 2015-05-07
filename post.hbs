@@ -1,6 +1,9 @@
 {{!< default}}
 
 {{#post}}
+	{{#if image}}
+	<img src="{{image}}" />
+	{{/if}}
 <article class="{{post_class}}">
 	<header><h1>{{ title }} {{#unless page}}<span class="date">by {{author.name}} / {{ date format="DD MMMM YYYY" }}{{/unless}}</span></h1></header>
 	<p>{{ content }}</p>

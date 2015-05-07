@@ -1,5 +1,9 @@
 {{!< default}}
 
+{{#if @blog.cover}}
+<img src="{{@blog.cover}}" style="max-width:100%"/>
+{{/if}}
+
 <h1>Recent Posts</h1>
 	<article class="loop {{post_class}}">
 {{#foreach posts}}
