@@ -264,4 +264,11 @@ body {
 .project > .image > img {
   width: 100%; }
 
+.pagination {
+  margin-left: 5px;
+  margin-top: 25px; }
+
+.page-number {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
