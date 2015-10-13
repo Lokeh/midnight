@@ -1,0 +1,100 @@
+#habit-widget {
+	font-family: Lato, sans-serif;
+	color: #250808;
+	font-size: 16px;
+}
+
+/* hide on mobile */
+@media (max-width : 768px) {
+	#habit-widget {
+		display: none;
+	}
+}
+
+#habit-widget .panel {
+	margin: auto;
+	padding: 10px;
+	border: 1px solid #bacbcf;
+	width: 80%;
+	max-width: 250px;
+	background: #cfdbde;
+}
+#habit-widget .profile-info {
+	margin: 0 0 1em 0;
+}
+#habit-widget .profile-name {
+	padding: .382em .618em;
+	border: 1px solid #fff;
+	outline: #999 solid 1px;
+	background-color: #999;
+	font-size: .8em;
+	line-height: 1;
+	font-weight: 700;
+	letter-spacing: .0618em;
+	color: #fff;
+	text-shadow: -1px -1px 1px #333,1px -1px 1px #333,-1px 1px 1px #333,1px 1px 1px #333;
+}
+#habit-widget .level {
+	float: right;
+}
+#habit-widget .stat-bar {
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #fff;
+	height: 1.3em;
+	margin: 0 0 .5em;
+	outline: #999 solid 1px;
+	background: #efefef;
+}
+#habit-widget .stat-bar .meter {
+	position:absolute;
+	background: #ddd;
+	height: 100%;
+}
+#habit-widget .stat-bar .text {
+	position: absolute;
+	z-index: 4;
+	right: .382em;
+}
+#habit-widget .stat-bar .meter.hp {
+	background: #da5353;
+	border-color: #6f1818;
+}
+#habit-widget .stat-bar .meter.exp {
+	background: #ffcc35;
+	border-color: #8a6700;
+}
+#habit-widget .stat-bar .meter.mp {
+	background: #4781e7;
+	border-color: #0f3577;
+}
+#habit-widget .habit-list {
+}
+#habit-widget .habit {
+	background-color: #fff2cc;
+	border: 1px solid #e5d9b7;
+	width: 95%;
+	margin: .5em auto;
+	padding: 8px 0;
+	line-height: 1.4;
+	text-align: center;
+}
+#habit-widget .habit .name {
+	margin: 0 0 0 10px;
+}
+#habit-widget .glyph-label {
+	float: left;
+	margin-right: 8px;
+	text-align: center;
+	background-color: #b0c3c7!important;
+	text-shadow: -1px -1px 1px #2f3f42,1px -1px 1px #2f3f42,-1px 1px 1px #2f3f42,1px 1px 1px #2f3f42;
+	padding: 4px 7px;
+	border: 1px solid #fff;
+	outline: #999 solid 1px;
+	font-size: .8em;
+	line-height: 1;
+	font-weight: 700;
+	letter-spacing: .0618em;
+	color: #fff;
+	min-width: 13px
+}

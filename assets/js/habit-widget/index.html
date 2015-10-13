@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- habit-widget scripts and styles -->
+		<script src="node_modules/react/dist/react.js"></script>
+		<script src="node_modules/qwest/src/qwest.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div id="habit-widget"></div>
+		<script src="js/build/habit.js"></script>
+		<script>
+			habitWidget.render('habit-widget', 'lilactown', 'http://willacton.com:8888/data');
+		</script>
+	</body>
+</html>
