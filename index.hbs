@@ -7,7 +7,9 @@
 <h1>Recent Posts</h1>
 	<article class="loop {{post_class}}">
 {{#foreach posts}}
-		<header><h2><a href="{{url}}">{{title}}</a> <span class="date">by {{author.name}} / {{date format="DD MMMM YYYY"}}</span></h2></header>
+		<header>
+			<h2><a href="{{url}}">{{title}}</a> <span class="date">by {{author.name}} / {{date format="DD MMMM YYYY"}} / <a href="{{url}}#disqus_thread">Comments</a></span></h2>
+		</header>
 		{{!-- <p>{{ excerpt words="26" }}... [<a href="{{url}}">Read More</a>]</p> --}}
 {{/foreach}}
 	{{pagination}}
